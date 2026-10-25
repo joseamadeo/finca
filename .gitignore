@@ -1,0 +1,38 @@
+# ---- Binarios ----
+finca
+finca.exe
+
+# Directorio residual "..." (solo contiene finca.exe; rompe git por la
+# normalización de rutas de Windows, que interpreta "..." como el directorio actual)
+.../
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.o
+
+# ---- Cobertura y tests ----
+*.test
+*.out
+coverage.html
+coverage.out
+
+# ---- Dependencias locales ----
+vendor/
+
+# ---- Entorno / secretos ----
+.env
+*.env.local
+
+# ---- IDE y editores ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---- Sistema ----
+Thumbs.db
+Desktop.ini
+.DS_Store
